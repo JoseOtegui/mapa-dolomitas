@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1cf2fd8c0b9d734bc2bdaf5a54e2ac5f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1cf2fd8c0b9d734bc2bdaf5a54e2ac5f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1cf2fd8c0b9d734bc2bdaf5a54e2ac5f = L.map(
+                "map_1cf2fd8c0b9d734bc2bdaf5a54e2ac5f",
+                {
+                    center: [46.2, 11.3],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b1ea95049446debcb65065d15b5688e3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1cf2fd8c0b9d734bc2bdaf5a54e2ac5f);
+        
+    
+            var feature_group_2886ffb3dad4790e16a6b886dbe2743e = L.featureGroup(
+                {}
+            ).addTo(map_1cf2fd8c0b9d734bc2bdaf5a54e2ac5f);
+        
+    
+            var marker_a76fdc5b0649bbbb979d4c4e8b311535 = L.marker(
+                [45.4642, 9.19],
+                {}
+            ).addTo(feature_group_2886ffb3dad4790e16a6b886dbe2743e);
+        
+    
+            var icon_69432237779c0c03ec13d0966a5bd06a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a76fdc5b0649bbbb979d4c4e8b311535.setIcon(icon_69432237779c0c03ec13d0966a5bd06a);
+        
+    
+        var popup_8969be250dc8be0fdc76f72983e67692 = L.popup({"maxWidth": 250});
+
+        
+            var html_439f7372a656b73c94199200b46d04c8 = $(`<div id="html_439f7372a656b73c94199200b46d04c8" style="width: 100.0%; height: 100.0%;"><b>Milán</b></div>`)[0];
+            popup_8969be250dc8be0fdc76f72983e67692.setContent(html_439f7372a656b73c94199200b46d04c8);
+        
+
+        marker_a76fdc5b0649bbbb979d4c4e8b311535.bindPopup(popup_8969be250dc8be0fdc76f72983e67692)
+        ;
+
+        
+    
+    
+            marker_a76fdc5b0649bbbb979d4c4e8b311535.bindTooltip(
+                `<div>
+                     Milán
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ee0a2cc6f7de00652a42e1e56f2e324 = L.marker(
+                [45.8081, 9.0852],
+                {}
+            ).addTo(feature_group_2886ffb3dad4790e16a6b886dbe2743e);
+        
+    
+            var icon_7e90528f9327d78e387c1defd1ee5f50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ee0a2cc6f7de00652a42e1e56f2e324.setIcon(icon_7e90528f9327d78e387c1defd1ee5f50);
+        
+    
+        var popup_46810ee9e57318b7db6fe2a144846a45 = L.popup({"maxWidth": 250});
+
+        
+            var html_7aaf0942fee337076c57e858fff2fcdc = $(`<div id="html_7aaf0942fee337076c57e858fff2fcdc" style="width: 100.0%; height: 100.0%;"><b>Lago di Como</b></div>`)[0];
+            popup_46810ee9e57318b7db6fe2a144846a45.setContent(html_7aaf0942fee337076c57e858fff2fcdc);
+        
+
+        marker_9ee0a2cc6f7de00652a42e1e56f2e324.bindPopup(popup_46810ee9e57318b7db6fe2a144846a45)
+        ;
+
+        
+    
+    
+            marker_9ee0a2cc6f7de00652a42e1e56f2e324.bindTooltip(
+                `<div>
+                     Lago di Como
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c40091630e2828be6f866b7b083365f2 = L.marker(
+                [46.576, 11.6743],
+                {}
+            ).addTo(feature_group_2886ffb3dad4790e16a6b886dbe2743e);
+        
+    
+            var icon_b5d7a0c2c4d3a0898c333037f3c84469 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c40091630e2828be6f866b7b083365f2.setIcon(icon_b5d7a0c2c4d3a0898c333037f3c84469);
+        
+    
+        var popup_d7df55245e33c04bfa7ad5ca895284c4 = L.popup({"maxWidth": 250});
+
+        
+            var html_5d22bb92ebae0dc79bab3d2bbcfa6064 = $(`<div id="html_5d22bb92ebae0dc79bab3d2bbcfa6064" style="width: 100.0%; height: 100.0%;"><b>Dolomitas (base: Ortisei)</b></div>`)[0];
+            popup_d7df55245e33c04bfa7ad5ca895284c4.setContent(html_5d22bb92ebae0dc79bab3d2bbcfa6064);
+        
+
+        marker_c40091630e2828be6f866b7b083365f2.bindPopup(popup_d7df55245e33c04bfa7ad5ca895284c4)
+        ;
+
+        
+    
+    
+            marker_c40091630e2828be6f866b7b083365f2.bindTooltip(
+                `<div>
+                     Dolomitas (base: Ortisei)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fffe6e6175f3a85c9760dbf47a807116 = L.marker(
+                [45.4384, 10.9916],
+                {}
+            ).addTo(feature_group_2886ffb3dad4790e16a6b886dbe2743e);
+        
+    
+            var icon_44353409486a812201144ac315415c97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fffe6e6175f3a85c9760dbf47a807116.setIcon(icon_44353409486a812201144ac315415c97);
+        
+    
+        var popup_8fb7dec3111e1d4597d054ef83c1f760 = L.popup({"maxWidth": 250});
+
+        
+            var html_220823958e0d0eb52c195306565b966f = $(`<div id="html_220823958e0d0eb52c195306565b966f" style="width: 100.0%; height: 100.0%;"><b>Verona</b></div>`)[0];
+            popup_8fb7dec3111e1d4597d054ef83c1f760.setContent(html_220823958e0d0eb52c195306565b966f);
+        
+
+        marker_fffe6e6175f3a85c9760dbf47a807116.bindPopup(popup_8fb7dec3111e1d4597d054ef83c1f760)
+        ;
+
+        
+    
+    
+            marker_fffe6e6175f3a85c9760dbf47a807116.bindTooltip(
+                `<div>
+                     Verona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21a081d6bf380b56f4a6ba5c2a14a076 = L.marker(
+                [45.4925, 10.6099],
+                {}
+            ).addTo(feature_group_2886ffb3dad4790e16a6b886dbe2743e);
+        
+    
+            var icon_64d0bdc2fbac211f49f4af6e472fb5e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21a081d6bf380b56f4a6ba5c2a14a076.setIcon(icon_64d0bdc2fbac211f49f4af6e472fb5e8);
+        
+    
+        var popup_1d5888d09672dd583efdbd68719b673e = L.popup({"maxWidth": 250});
+
+        
+            var html_79fa8cc3113955ce72ada97d088a5d59 = $(`<div id="html_79fa8cc3113955ce72ada97d088a5d59" style="width: 100.0%; height: 100.0%;"><b>Lago di Garda – Sirmione</b></div>`)[0];
+            popup_1d5888d09672dd583efdbd68719b673e.setContent(html_79fa8cc3113955ce72ada97d088a5d59);
+        
+
+        marker_21a081d6bf380b56f4a6ba5c2a14a076.bindPopup(popup_1d5888d09672dd583efdbd68719b673e)
+        ;
+
+        
+    
+    
+            marker_21a081d6bf380b56f4a6ba5c2a14a076.bindTooltip(
+                `<div>
+                     Lago di Garda – Sirmione
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_299922d426b35c6d26d8cb9e47766e59 = L.marker(
+                [45.706, 10.0506],
+                {}
+            ).addTo(feature_group_2886ffb3dad4790e16a6b886dbe2743e);
+        
+    
+            var icon_712a681d6196bbca8ffd07af510eb261 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_299922d426b35c6d26d8cb9e47766e59.setIcon(icon_712a681d6196bbca8ffd07af510eb261);
+        
+    
+        var popup_ddf837a2313dadf99916039820cf0d8b = L.popup({"maxWidth": 250});
+
+        
+            var html_3bc6240f7f37b6529cdc9eb495143254 = $(`<div id="html_3bc6240f7f37b6529cdc9eb495143254" style="width: 100.0%; height: 100.0%;"><b>Lago d’Iseo</b></div>`)[0];
+            popup_ddf837a2313dadf99916039820cf0d8b.setContent(html_3bc6240f7f37b6529cdc9eb495143254);
+        
+
+        marker_299922d426b35c6d26d8cb9e47766e59.bindPopup(popup_ddf837a2313dadf99916039820cf0d8b)
+        ;
+
+        
+    
+    
+            marker_299922d426b35c6d26d8cb9e47766e59.bindTooltip(
+                `<div>
+                     Lago d’Iseo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18e4b392506cd89e04ddc7065af74cd6 = L.marker(
+                [45.4408, 12.3155],
+                {}
+            ).addTo(feature_group_2886ffb3dad4790e16a6b886dbe2743e);
+        
+    
+            var icon_965c2eac5891862af6e25ed93ec3295c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_18e4b392506cd89e04ddc7065af74cd6.setIcon(icon_965c2eac5891862af6e25ed93ec3295c);
+        
+    
+        var popup_aa168ca733f137be3d0a7dbf509643b5 = L.popup({"maxWidth": 250});
+
+        
+            var html_5fd969ca1548ccc92795f15c5d6a5033 = $(`<div id="html_5fd969ca1548ccc92795f15c5d6a5033" style="width: 100.0%; height: 100.0%;"><b>Venecia</b></div>`)[0];
+            popup_aa168ca733f137be3d0a7dbf509643b5.setContent(html_5fd969ca1548ccc92795f15c5d6a5033);
+        
+
+        marker_18e4b392506cd89e04ddc7065af74cd6.bindPopup(popup_aa168ca733f137be3d0a7dbf509643b5)
+        ;
+
+        
+    
+    
+            marker_18e4b392506cd89e04ddc7065af74cd6.bindTooltip(
+                `<div>
+                     Venecia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_57f24d8303568774059cc6c4f5d87c7b = L.polyline(
+                [[45.4642, 9.19], [45.8081, 9.0852], [46.576, 11.6743], [45.4384, 10.9916], [45.4925, 10.6099], [45.706, 10.0506], [45.4408, 12.3155], [45.4642, 9.19]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2886ffb3dad4790e16a6b886dbe2743e);
+        
+    
+            var feature_group_616827217738a7c178812ed10ca1a39d = L.featureGroup(
+                {}
+            ).addTo(map_1cf2fd8c0b9d734bc2bdaf5a54e2ac5f);
+        
+    
+            var marker_cluster_1f7a355dbb73c775cb093b0095571982 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_616827217738a7c178812ed10ca1a39d.addLayer(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var marker_a5059ba4bc0372bf6f542307286e9070 = L.marker(
+                [46.6148, 11.7339],
+                {}
+            ).addTo(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var icon_9cf33b18e766ffd07f550a05c9732bfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a5059ba4bc0372bf6f542307286e9070.setIcon(icon_9cf33b18e766ffd07f550a05c9732bfc);
+        
+    
+        var popup_10527d48e759e292e4f923616334316d = L.popup({"maxWidth": 280});
+
+        
+            var html_71df009aa9854c33adeb9190ca9c83ee = $(`<div id="html_71df009aa9854c33adeb9190ca9c83ee" style="width: 100.0%; height: 100.0%;"><b>Seceda (teleférico desde Ortisei)</b><br/>Miradores espectaculares y rutas fáciles arriba.</div>`)[0];
+            popup_10527d48e759e292e4f923616334316d.setContent(html_71df009aa9854c33adeb9190ca9c83ee);
+        
+
+        marker_a5059ba4bc0372bf6f542307286e9070.bindPopup(popup_10527d48e759e292e4f923616334316d)
+        ;
+
+        
+    
+    
+            marker_a5059ba4bc0372bf6f542307286e9070.bindTooltip(
+                `<div>
+                     Seceda (teleférico desde Ortisei)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38a952225c174b8d12540e25b954d67e = L.marker(
+                [46.5446, 11.5656],
+                {}
+            ).addTo(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var icon_f16c3b00e596ff3901164fdf7af7cbc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_38a952225c174b8d12540e25b954d67e.setIcon(icon_f16c3b00e596ff3901164fdf7af7cbc9);
+        
+    
+        var popup_9518054b559047b180346f66cc7a615b = L.popup({"maxWidth": 280});
+
+        
+            var html_9e785d17971a4e638f74f2a52930af79 = $(`<div id="html_9e785d17971a4e638f74f2a52930af79" style="width: 100.0%; height: 100.0%;"><b>Alpe di Siusi / Compatsch</b><br/>Praderas alpinas inmensas; paseos suaves.</div>`)[0];
+            popup_9518054b559047b180346f66cc7a615b.setContent(html_9e785d17971a4e638f74f2a52930af79);
+        
+
+        marker_38a952225c174b8d12540e25b954d67e.bindPopup(popup_9518054b559047b180346f66cc7a615b)
+        ;
+
+        
+    
+    
+            marker_38a952225c174b8d12540e25b954d67e.bindTooltip(
+                `<div>
+                     Alpe di Siusi / Compatsch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6d572953464479a20d269053026682d = L.marker(
+                [46.5068, 11.7648],
+                {}
+            ).addTo(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var icon_c115ad53c22288283d83bf219839d2df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b6d572953464479a20d269053026682d.setIcon(icon_c115ad53c22288283d83bf219839d2df);
+        
+    
+        var popup_9438eefac128be02b235eb3808a52b29 = L.popup({"maxWidth": 280});
+
+        
+            var html_21c35b0fdb27f0e7c5bbf93d609b82f9 = $(`<div id="html_21c35b0fdb27f0e7c5bbf93d609b82f9" style="width: 100.0%; height: 100.0%;"><b>Passo Sella</b><br/>Puerto panorámico entre Val Gardena y Val di Fassa.</div>`)[0];
+            popup_9438eefac128be02b235eb3808a52b29.setContent(html_21c35b0fdb27f0e7c5bbf93d609b82f9);
+        
+
+        marker_b6d572953464479a20d269053026682d.bindPopup(popup_9438eefac128be02b235eb3808a52b29)
+        ;
+
+        
+    
+    
+            marker_b6d572953464479a20d269053026682d.bindTooltip(
+                `<div>
+                     Passo Sella
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26a242b3774c69257eb6988c999a9e98 = L.marker(
+                [46.5514, 11.8283],
+                {}
+            ).addTo(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var icon_96d0f5e026106239cf1b2790c943340c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_26a242b3774c69257eb6988c999a9e98.setIcon(icon_96d0f5e026106239cf1b2790c943340c);
+        
+    
+        var popup_37c81b13ac50dadce4592713014f7af6 = L.popup({"maxWidth": 280});
+
+        
+            var html_c3f03e4cec4ff925c5ea2429b11f3ec1 = $(`<div id="html_c3f03e4cec4ff925c5ea2429b11f3ec1" style="width: 100.0%; height: 100.0%;"><b>Passo Gardena</b><br/>Puerto con vistas al Grupo Sella.</div>`)[0];
+            popup_37c81b13ac50dadce4592713014f7af6.setContent(html_c3f03e4cec4ff925c5ea2429b11f3ec1);
+        
+
+        marker_26a242b3774c69257eb6988c999a9e98.bindPopup(popup_37c81b13ac50dadce4592713014f7af6)
+        ;
+
+        
+    
+    
+            marker_26a242b3774c69257eb6988c999a9e98.bindTooltip(
+                `<div>
+                     Passo Gardena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bfb83e5f4db1954677cb8b42854037a = L.marker(
+                [46.4808, 11.8003],
+                {}
+            ).addTo(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var icon_d2fbd57f7db0d2b33b908a66f4b95e64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5bfb83e5f4db1954677cb8b42854037a.setIcon(icon_d2fbd57f7db0d2b33b908a66f4b95e64);
+        
+    
+        var popup_837c24d866dab9d73916a7e3dd51c961 = L.popup({"maxWidth": 280});
+
+        
+            var html_494876316c8a7db5567d26eff6808207 = $(`<div id="html_494876316c8a7db5567d26eff6808207" style="width: 100.0%; height: 100.0%;"><b>Sass Pordoi (teleférico)</b><br/>Subida a 2.950 m; vistas 360º.</div>`)[0];
+            popup_837c24d866dab9d73916a7e3dd51c961.setContent(html_494876316c8a7db5567d26eff6808207);
+        
+
+        marker_5bfb83e5f4db1954677cb8b42854037a.bindPopup(popup_837c24d866dab9d73916a7e3dd51c961)
+        ;
+
+        
+    
+    
+            marker_5bfb83e5f4db1954677cb8b42854037a.bindTooltip(
+                `<div>
+                     Sass Pordoi (teleférico)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c805693874a21227ac6cd6806d9ca6e2 = L.marker(
+                [46.409, 11.5755],
+                {}
+            ).addTo(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var icon_a07d39402dc59e64d8a9c231034f9e81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c805693874a21227ac6cd6806d9ca6e2.setIcon(icon_a07d39402dc59e64d8a9c231034f9e81);
+        
+    
+        var popup_543e5517cd8ab1f644c7ad8ec8af3b2c = L.popup({"maxWidth": 280});
+
+        
+            var html_9cc926680347218296eaeed60fa13ecb = $(`<div id="html_9cc926680347218296eaeed60fa13ecb" style="width: 100.0%; height: 100.0%;"><b>Lago di Carezza</b><br/>Lago esmeralda con pinos; fácil acceso.</div>`)[0];
+            popup_543e5517cd8ab1f644c7ad8ec8af3b2c.setContent(html_9cc926680347218296eaeed60fa13ecb);
+        
+
+        marker_c805693874a21227ac6cd6806d9ca6e2.bindPopup(popup_543e5517cd8ab1f644c7ad8ec8af3b2c)
+        ;
+
+        
+    
+    
+            marker_c805693874a21227ac6cd6806d9ca6e2.bindTooltip(
+                `<div>
+                     Lago di Carezza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0de729faa6a037f4671634f975dfe106 = L.marker(
+                [46.6341, 11.7035],
+                {}
+            ).addTo(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var icon_53dc6652aba87f9de56e781eac6aea21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0de729faa6a037f4671634f975dfe106.setIcon(icon_53dc6652aba87f9de56e781eac6aea21);
+        
+    
+        var popup_cd0125e4ada7169cb276f44aca0ce1cf = L.popup({"maxWidth": 280});
+
+        
+            var html_45028bb01a681c28ba437d0e63cd00cf = $(`<div id="html_45028bb01a681c28ba437d0e63cd00cf" style="width: 100.0%; height: 100.0%;"><b>Val di Funes – Santa Maddalena</b><br/>Postal clásica con las Odle al fondo.</div>`)[0];
+            popup_cd0125e4ada7169cb276f44aca0ce1cf.setContent(html_45028bb01a681c28ba437d0e63cd00cf);
+        
+
+        marker_0de729faa6a037f4671634f975dfe106.bindPopup(popup_cd0125e4ada7169cb276f44aca0ce1cf)
+        ;
+
+        
+    
+    
+            marker_0de729faa6a037f4671634f975dfe106.bindTooltip(
+                `<div>
+                     Val di Funes – Santa Maddalena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8cfa75c8441c132f858dc751641892f = L.marker(
+                [46.6945, 12.0853],
+                {}
+            ).addTo(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var icon_6fc77db579bf9453be6895c001b99cdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e8cfa75c8441c132f858dc751641892f.setIcon(icon_6fc77db579bf9453be6895c001b99cdc);
+        
+    
+        var popup_9c394ed5e035da9b63cc9a741592eb96 = L.popup({"maxWidth": 280});
+
+        
+            var html_ffff4895ebe6a70e22372ab7632ddec9 = $(`<div id="html_ffff4895ebe6a70e22372ab7632ddec9" style="width: 100.0%; height: 100.0%;"><b>Lago di Braies</b><br/>Lago icónico (mejor a primera/última hora).</div>`)[0];
+            popup_9c394ed5e035da9b63cc9a741592eb96.setContent(html_ffff4895ebe6a70e22372ab7632ddec9);
+        
+
+        marker_e8cfa75c8441c132f858dc751641892f.bindPopup(popup_9c394ed5e035da9b63cc9a741592eb96)
+        ;
+
+        
+    
+    
+            marker_e8cfa75c8441c132f858dc751641892f.bindTooltip(
+                `<div>
+                     Lago di Braies
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_882cfad2791c641aeffc8264f249367c = L.marker(
+                [46.6187, 12.2975],
+                {}
+            ).addTo(marker_cluster_1f7a355dbb73c775cb093b0095571982);
+        
+    
+            var icon_c6ccee8e934df84b18d398dd72512b66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_882cfad2791c641aeffc8264f249367c.setIcon(icon_c6ccee8e934df84b18d398dd72512b66);
+        
+    
+        var popup_e44ed026540b10dc1a5ef0be15a53192 = L.popup({"maxWidth": 280});
+
+        
+            var html_8a2d50a3904b3668af5a49938ae95424 = $(`<div id="html_8a2d50a3904b3668af5a49938ae95424" style="width: 100.0%; height: 100.0%;"><b>Tre Cime di Lavaredo – Rif. Auronzo (parking)</b><br/>Inicio de la ruta circular clásica.</div>`)[0];
+            popup_e44ed026540b10dc1a5ef0be15a53192.setContent(html_8a2d50a3904b3668af5a49938ae95424);
+        
+
+        marker_882cfad2791c641aeffc8264f249367c.bindPopup(popup_e44ed026540b10dc1a5ef0be15a53192)
+        ;
+
+        
+    
+    
+            marker_882cfad2791c641aeffc8264f249367c.bindTooltip(
+                `<div>
+                     Tre Cime di Lavaredo – Rif. Auronzo (parking)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_f2d6e9e75ee3b7c4a144cb9be594a30c = L.featureGroup(
+                {}
+            ).addTo(map_1cf2fd8c0b9d734bc2bdaf5a54e2ac5f);
+        
+    
+            var marker_21ed628c366f34fdca595746dba584ae = L.marker(
+                [46.5759, 11.6701],
+                {}
+            ).addTo(feature_group_f2d6e9e75ee3b7c4a144cb9be594a30c);
+        
+    
+            var icon_3f0bc392c38a1389bd3a70bc6f6595e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_21ed628c366f34fdca595746dba584ae.setIcon(icon_3f0bc392c38a1389bd3a70bc6f6595e8);
+        
+    
+        var popup_1543581e34aa3048fbf93ea8733868bc = L.popup({"maxWidth": 280});
+
+        
+            var html_ff5a20d5e9abd2ae08203c827d0c7b15 = $(`<div id="html_ff5a20d5e9abd2ae08203c827d0c7b15" style="width: 100.0%; height: 100.0%;"><b>Parking teleférico Ortisei - Seceda</b><br/>Aparcamiento junto al valle / funicular + teleférico.</div>`)[0];
+            popup_1543581e34aa3048fbf93ea8733868bc.setContent(html_ff5a20d5e9abd2ae08203c827d0c7b15);
+        
+
+        marker_21ed628c366f34fdca595746dba584ae.bindPopup(popup_1543581e34aa3048fbf93ea8733868bc)
+        ;
+
+        
+    
+    
+            marker_21ed628c366f34fdca595746dba584ae.bindTooltip(
+                `<div>
+                     Parking teleférico Ortisei - Seceda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89ec48d191a2e926f224979baa13c704 = L.marker(
+                [46.4105, 11.5756],
+                {}
+            ).addTo(feature_group_f2d6e9e75ee3b7c4a144cb9be594a30c);
+        
+    
+            var icon_ad39926e8b1287107a64a0fea72d26b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_89ec48d191a2e926f224979baa13c704.setIcon(icon_ad39926e8b1287107a64a0fea72d26b9);
+        
+    
+        var popup_7fc3649a3947db03407edd0ca66c2aef = L.popup({"maxWidth": 280});
+
+        
+            var html_c26361bcdda86850248264fda1d1316d = $(`<div id="html_c26361bcdda86850248264fda1d1316d" style="width: 100.0%; height: 100.0%;"><b>Parking Lago di Carezza</b><br/>Parking oficial; pasarela subterránea al lago.</div>`)[0];
+            popup_7fc3649a3947db03407edd0ca66c2aef.setContent(html_c26361bcdda86850248264fda1d1316d);
+        
+
+        marker_89ec48d191a2e926f224979baa13c704.bindPopup(popup_7fc3649a3947db03407edd0ca66c2aef)
+        ;
+
+        
+    
+    
+            marker_89ec48d191a2e926f224979baa13c704.bindTooltip(
+                `<div>
+                     Parking Lago di Carezza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e30257906ff65e577f2d5372ded7e327 = L.marker(
+                [46.5059, 11.7634],
+                {}
+            ).addTo(feature_group_f2d6e9e75ee3b7c4a144cb9be594a30c);
+        
+    
+            var icon_99aeb315a02954d45a795a2191fcbaf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e30257906ff65e577f2d5372ded7e327.setIcon(icon_99aeb315a02954d45a795a2191fcbaf7);
+        
+    
+        var popup_54930a0694bda5640bce533d30b95871 = L.popup({"maxWidth": 280});
+
+        
+            var html_ba8a784841dabcbc2e109b04dfd8a04d = $(`<div id="html_ba8a784841dabcbc2e109b04dfd8a04d" style="width: 100.0%; height: 100.0%;"><b>Parking Passo Sella (mirador)</b><br/>Pequeñas plazas a pie de carretera (llega pronto).</div>`)[0];
+            popup_54930a0694bda5640bce533d30b95871.setContent(html_ba8a784841dabcbc2e109b04dfd8a04d);
+        
+
+        marker_e30257906ff65e577f2d5372ded7e327.bindPopup(popup_54930a0694bda5640bce533d30b95871)
+        ;
+
+        
+    
+    
+            marker_e30257906ff65e577f2d5372ded7e327.bindTooltip(
+                `<div>
+                     Parking Passo Sella (mirador)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8f58349ce29991509e9da8e06dcc520 = L.marker(
+                [46.6383, 11.7258],
+                {}
+            ).addTo(feature_group_f2d6e9e75ee3b7c4a144cb9be594a30c);
+        
+    
+            var icon_d09d860fffaea4ae3ef45edea75f7321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a8f58349ce29991509e9da8e06dcc520.setIcon(icon_d09d860fffaea4ae3ef45edea75f7321);
+        
+    
+        var popup_382e28829315c8c0f4a398f366351475 = L.popup({"maxWidth": 280});
+
+        
+            var html_20b5b572ff8cf4d0811f3cab9a3c02f1 = $(`<div id="html_20b5b572ff8cf4d0811f3cab9a3c02f1" style="width: 100.0%; height: 100.0%;"><b>Parking Val di Funes (Iglesia Santa Maddalena)</b><br/>Zonas señalizadas; respeta los accesos locales.</div>`)[0];
+            popup_382e28829315c8c0f4a398f366351475.setContent(html_20b5b572ff8cf4d0811f3cab9a3c02f1);
+        
+
+        marker_a8f58349ce29991509e9da8e06dcc520.bindPopup(popup_382e28829315c8c0f4a398f366351475)
+        ;
+
+        
+    
+    
+            marker_a8f58349ce29991509e9da8e06dcc520.bindTooltip(
+                `<div>
+                     Parking Val di Funes (Iglesia Santa Maddalena)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc595badcf584509d30bab7cb1f8caa9 = L.marker(
+                [46.7008, 12.0849],
+                {}
+            ).addTo(feature_group_f2d6e9e75ee3b7c4a144cb9be594a30c);
+        
+    
+            var icon_921028b7540cf470df77402c60635611 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fc595badcf584509d30bab7cb1f8caa9.setIcon(icon_921028b7540cf470df77402c60635611);
+        
+    
+        var popup_ce312939eee17d56b25e439ce1c41757 = L.popup({"maxWidth": 280});
+
+        
+            var html_0277db0a03b13ae07e3da16eff3a1c82 = $(`<div id="html_0277db0a03b13ae07e3da16eff3a1c82" style="width: 100.0%; height: 100.0%;"><b>Parking Lago di Braies</b><br/>Varios parkings; en verano suele requerir reserva.</div>`)[0];
+            popup_ce312939eee17d56b25e439ce1c41757.setContent(html_0277db0a03b13ae07e3da16eff3a1c82);
+        
+
+        marker_fc595badcf584509d30bab7cb1f8caa9.bindPopup(popup_ce312939eee17d56b25e439ce1c41757)
+        ;
+
+        
+    
+    
+            marker_fc595badcf584509d30bab7cb1f8caa9.bindTooltip(
+                `<div>
+                     Parking Lago di Braies
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_873663584c7ef2e6f6c3c0a0164ce6bc = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b1ea95049446debcb65065d15b5688e3,
+                },
+                overlays :  {
+                    "Itinerario (paradas principales)" : feature_group_2886ffb3dad4790e16a6b886dbe2743e,
+                    "Dolomitas \u2013 sitios a ver" : feature_group_616827217738a7c178812ed10ca1a39d,
+                    "Parkings \u00fatiles / accesos" : feature_group_f2d6e9e75ee3b7c4a144cb9be594a30c,
+                },
+            };
+            L.control.layers(
+                layer_control_873663584c7ef2e6f6c3c0a0164ce6bc.base_layers,
+                layer_control_873663584c7ef2e6f6c3c0a0164ce6bc.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_1cf2fd8c0b9d734bc2bdaf5a54e2ac5f);
+        
+</script>
+</html>
